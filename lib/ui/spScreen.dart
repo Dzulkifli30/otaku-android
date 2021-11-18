@@ -31,12 +31,23 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Container(
         width: double.infinity,
         decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("assets/img/bgon.png"),fit: BoxFit.cover,)
+          image: DecorationImage(image: AssetImage("assets/img/bgon.png"),fit: BoxFit.cover,),
         ),
         child: Column(
           children: [
+            SizedBox(height: size.height * .35,),
             Center(
               child: Image.asset('assets/img/logo.png', height: size.height * .20,),
+            ),
+            SizedBox(height: size.height * .30,),
+            Container(
+              alignment: Alignment.bottomCenter,
+              child: Column(
+                children: [
+                  Text("Lanjutkan Belajarmu",style: TextStyle(color: Colors.white,fontSize: 18),),
+                  Text("Bersama Dengan otak-ku",style: TextStyle(color: Colors.white,fontSize: 18),),
+                ],
+              ),
             )
           ],
         ),
