@@ -33,6 +33,21 @@ class _SignInState extends State<SignIn> {
                   )
                 ],
               ),
+            ),
+            SizedBox(height: size.height * .2,),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30),
+                    topRight: Radius.circular(30),
+                  )
+                ),
+                child: Column(
+                  children: [],
+                ),
+              )
             )
           ],
         ),
